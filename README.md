@@ -1,34 +1,43 @@
-## Working with Strings
-Libray Management System
+# Library Management System
 
-## INTRODUCTION 
-In this lab, you’ll use various methods to manipulate Strings in Java. You will check String length, shorten Strings, and search for specific parts of a String.
-Let’s use Riley as an example. Riley has a problem. She is developing a library management system for clients to better organize and catalog their book inventory. However, there is an issue with capturing book titles: when they are too long, they do not display correctly in the management system.
-To ensure book titles display correctly, they must be no more than 20 characters long. Riley needs to check the title length and shorten it if it exceeds this limit. Additionally, Riley wants the system to search for specific words in a book title to enhance functionality.
-You’ve been provided with the starter code. To help Riley, you must write the necessary code to accomplish the requested tasks. Let’s get started! 
+## Introduction
+This project focuses on manipulating Strings in Java through practical tasks related to a **Library Management System**. The goal is to develop functionality for better organization and cataloging of book inventories. This exercise demonstrates key concepts, such as checking String lengths, shortening Strings, and searching for specific parts of a String.
 
-## REFLECTION POINT: UNDERSTANDING ARRAYS
-Previously, you learned that an array in Java is a collection of elements of the same type stored in contiguous memory locations. Arrays allow efficient data access and manipulation using an index and help handle multiple values with a single variable. Therefore, a String is a sequence of characters represented internally as an array of the char data type.
-Understanding arrays is crucial because it forms the basis of how Strings and other data structures work in Java. By grasping the concept of arrays, you will be better equipped to manipulate data efficiently, as you will be doing in this lab.
+## Context
+Riley, the developer of this system, faces challenges in handling book titles that are too long to display correctly. To address this, the project includes:
+1. Checking the length of book titles.
+2. Shortening titles longer than 20 characters.
+3. Searching for specific words within a book title.
 
-## THE GAOL
-Help Riley by checking book title lengths, shortening long titles, and searching for specific words in book titles?
+## Features and Functionality
+1. **Check Book Title Length**:
+   - Verify if book titles exceed 20 characters.
+   - Use the `substring()` method to shorten titles when necessary.
 
-## CHECK THE LENGTH OF THE BOOK TITLE
-STEP 1: Declare and initialize a variable, then check its length
-- Inside the main method, declare a variable name *bookTitle*, and assign a name to it.
+2. **Search for a Word in a Book Title**:
+   - Leverage the `contains()` method to search for specific words or characters in titles.
 
-STEP 2: Declare and initialize a variable then check its length
-- Once you've confirmed the length of *bookTitle*, check if the book title is more than *20* characters long. If it is longer, use the *substring()* method to limit the book title length to *20* characters.
+3. **Demonstrate String Methods**:
+   - Utilize Java methods like `length()`, `substring()`, and `contains()` to manipulate Strings effectively.
 
-## SEARCH FOR A WORD IN A BOOK TITLE
-Riley also wants her system to be searchable, particularly for finding words or characters within book titles. Now you’ll search for a word in the book title you created. 
+## Steps to Implement
+### Step 1: Declare and Initialize a Variable to Check Its Length
+- Create a variable `bookTitle` in the `main` method and assign a title to it.
+- Determine the title's length using the `length()` method.
 
-STEP 3: Find a word in the book title
-- Declare and initialize a String variable searchWord. Use the *contains()* method to check if a particular word is present in the book title. 
+### Step 2: Shorten Titles Exceeding 20 Characters
+- Check if the title exceeds the 20-character limit.
+- If so, apply the `substring()` method to reduce its length to 20 characters.
 
-## CONCLUSION
-In this lab, you learned how to use the *length()*, *substring()*, and *contains()* methods in Java to manipulate Strings. You checked the length of a String, shortened a too-long String, and searched for a part of a String—all in the context of Riley's library management system! You saw how manipulating Strings has real-world uses in Java programs. 
-Consider working on an example where you can use different String methods. Practice makes perfect, after all!
+### Step 3: Search for a Specific Word in the Title
+- Declare and initialize a `String` variable `searchWord`.
+- Use the `contains()` method to check for the presence of a word in the book title.
 
-## Software Used: IntelliJ
+## Reflection Point: Understanding Arrays
+Strings in Java are represented as arrays of characters (`char` data type). Understanding arrays provides a strong foundation for effectively working with Strings and manipulating data in Java.
+
+## Conclusion
+This project demonstrates real-world applications of String manipulation in Java programming. By completing this exercise, you will strengthen your understanding of key methods and their practical uses in managing data efficiently.
+
+## Software Used
+- **IntelliJ IDEA**: The integrated development environment used for coding and executing the program.
